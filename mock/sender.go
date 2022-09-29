@@ -4,15 +4,15 @@ import (
 	"context"
 	"errors"
 	"math/rand"
-	"multithreading/homework2/message/http"
-	httpRec "multithreading/homework2/receiver/http"
+	"multithreading/multithreading-homework-2/message/http"
+	httpRec "multithreading/multithreading-homework-2/receiver/http"
 	"time"
 )
 
 var letterRunes = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
 
-//EmulateUser Can emulate input to given receiver, context needed to end execution after cancellation function was called
-//MessageType will be randomized - either can be given type or wrong type.
+// EmulateUser Can emulate input to given receiver, context needed to end execution after cancellation function was called
+// MessageType will be randomized - either can be given type or wrong type.
 func EmulateUser(
 	receiver httpRec.Receiver[string, http.Message[string]],
 	messageType http.MessageType,

@@ -1,6 +1,6 @@
 package main
 
-import "multithreading/homework2/application"
+import "multithreading/multithreading-homework-2/application"
 
 // Agenda: We have application that processes some user requests.
 // Receiver structs are needed for messages routing after they come.

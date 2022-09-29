@@ -1,8 +1,8 @@
 package http
 
 import (
-	"multithreading/homework2/message"
-	"multithreading/homework2/message/http"
+	"multithreading/multithreading-homework-2/message"
+	"multithreading/multithreading-homework-2/message/http"
 )
 
 type Processor[U any, T http.Message[U]] struct {
